@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Workshop API - Student Data</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <h1>Workshop API</h1>
+  <button id="refreshBtn" aria-label="Refresh student data">Refresh</button>
+  
+  <table id="studentTable" aria-label="Student data table">
+    <caption>Student Records</caption>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Email</th>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Student ID</th>
+        <th>Role</th>
+        <th>Created At</th>
+        <th>Updated At</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td colspan="8" class="loading">Loading data...</td></tr>
+    </tbody>
+  </table>
+  
+  <div id="errorMessage" class="error" role="alert" style="display:none;"></div>
+
+</body>
+</html>

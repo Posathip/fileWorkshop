@@ -1,0 +1,28 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.gallery-item {
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 5px;
+  text-align: center;
+  width: 200px;
+}
+
+.gallery-item img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
