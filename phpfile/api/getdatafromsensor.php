@@ -37,13 +37,13 @@ function handleMessage($topic, $msg) {
         return;
     }
 
-    // Validate required fields
+   
     if (!isset($data['sensorID'], $data['temperature'], $data['timestamp'])) {
         echo "Missing required fields\n";
         return;
     }
 
-    // Prepare insert statement to avoid SQL injection
+
     $stmt = $conn->prepare("INSERT INTO sensors (sensorID, temperature, timestamp) VALUES (?, ?, ?)");
     if (!$stmt) {
         echo "Prepare failed: (" . $conn->errno . ") " . $conn->error . "\n";

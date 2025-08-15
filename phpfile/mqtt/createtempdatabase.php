@@ -1,9 +1,9 @@
 <?php
 header('Content-Type: application/json');
 
-require 'connectdb.php'; // must create $conn (mysqli object)
+require 'connectdb.php'; 
 
-// SQL to create the sensors table
+
 $sql = "
 CREATE TABLE IF NOT EXISTS sensors (
     id INT AUTO_INCREMENT PRIMARY KEY,
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS sensors (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 ";
 
-// Try executing query
+
 if ($conn->query($sql) === TRUE) {
     echo json_encode([
         "status" => "success",

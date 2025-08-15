@@ -46,7 +46,7 @@ function saveToDatabase($topic, $msg) {
     
     $timestamp_mysql = date("Y-m-d H:i:s", strtotime($data['timestamp']));
 
-    // Prepare and insert
+
     $stmt = $conn->prepare("
         INSERT INTO sensors (sensorID, temperature, timestamp)
         VALUES (?, ?, ?)

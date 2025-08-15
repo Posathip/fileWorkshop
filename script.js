@@ -43,6 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   refreshBtn.addEventListener('click', fetchData);
 
-  // โหลดข้อมูลครั้งแรกเมื่อเพจโหลดเสร็จ
+
   fetchData();
 });

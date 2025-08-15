@@ -1,6 +1,6 @@
 <?php
 header('Content-Type: application/json');
-require 'connectdb.php'; // สร้าง $conn
+require 'connectdb.php'; 
 
 $mockData = [
     ['alice@example.com', 'Alice Johnson', 'ABC University', 'S001', 'student'],

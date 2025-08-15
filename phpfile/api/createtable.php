@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS Student (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 ";
 
-// Try executing query
+
 if ($conn->query($sql) === TRUE) {
     echo json_encode([
         "status" => "success",

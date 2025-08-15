@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'DELETE') {
 if (isset($_GET['id'])) {
     $id = intval($_GET['id']);
 } else {
-    // fallback กรณี id อยู่ใน body ของ DELETE
+    
     parse_str(file_get_contents("php://input"), $delete_vars);
     if (isset($delete_vars['id'])) {
         $id = intval($delete_vars['id']);
